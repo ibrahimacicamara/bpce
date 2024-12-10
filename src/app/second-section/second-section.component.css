@@ -1,0 +1,90 @@
+a{
+    text-decoration: none;
+}
+body{
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#works{
+  display: flex;
+  /* flex-wrap: wrap; */
+  height: 300px;
+  overflow: scroll;
+  scrollbar-width: none;  
+}
+.work{
+    position: relative;
+    height: auto;
+    width: 450px;
+    margin: 10px;
+}
+.name{
+    align-content: center;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+    position: absolute;
+    color: white;
+}
+.name:hover{
+    background-color: var(--my-color);
+    transition: 0.6S;
+}
+button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background-color: var(--my-third);
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    border: solid 2px var(--my-third);
+}
+button:hover{
+    background-color: transparent;
+    color: var(--my-third);
+}
+#word{
+    min-width: 300px;
+    width: 25%;
+     background-color: rgb(245, 245, 245);
+     padding: 30px; 
+     border-radius: 20px;
+     height: auto;
+     min-height: 400px;
+     height: fit-content;
+}
+#word:hover{
+    background-color: transparent;
+    border: solid 2px black;
+    transition: 0.6s;
+}
+.hidden{
+    display: none;
+}
+#word:hover .hidden{
+    animation: anim 1S;
+    margin-top: 20px;
+    display: flex;
+    background-color: rgb(30, 53, 103);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 100%;
+    float: right;
+}
+@keyframes anim {
+    30%{
+     scale:0 ;
+     opacity:0;
+    }
+    100%{
+     scale:1 
+    }
+        
+    
+}

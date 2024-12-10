@@ -1,0 +1,113 @@
+a{text-decoration: none;}
+body{
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+}
+#works{
+   display: grid;
+   grid-template-columns: repeat(8,450px);
+   overflow: scroll;
+   scrollbar-width: none;
+}
+.work{
+    /* background-color: blue; */
+   /* display: inline-block; */
+   height: 130px;
+   margin: 10px;
+   padding: 20px;
+   border-radius: 20px;
+   border: solid 1px var(--my-color);
+   color: var(--my-font);
+}
+.work:hover{
+    color: var(--my-color);
+    transition: 0.5S;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--my-font);
+}
+.work-top{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--my-second);
+    border-bottom: solid 2px var(--my-second);
+    padding-bottom: 10px;
+}
+.hidden-button{
+    display: none;
+    font-weight: 600;
+    position: relative;
+    margin: auto; 
+    color: var(--my-font);
+    background-color: white;
+    border: solid 2px white;
+}
+.work:hover .showed{
+    display: none;
+}
+.work:hover .hidden-button{
+    display: flex;
+}
+.hidden-button:hover{
+    background-color: transparent;
+    color: white;
+}
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+.button{
+   font-size: medium;
+   font-weight: 600;
+   color: white;
+   border: 0px;
+   height: fit-content;
+   background-color: var(--my-second); 
+}
+
+.button:hover{
+    transition: 0.5s;
+    color: var(--my-second);
+    background-color: transparent;
+    border: solid 2px var(--my-second);
+}
+
+#bottom{
+    margin: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--my-color);
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius:20px ;
+    border-bottom: solid 5px var(--my-second);
+    border-right: solid 5px var(--my-second);
+    border-left: solid 5px var(--my-second);
+}
+
+
+#title{
+    font-size: 25px;
+    font-weight: 500;
+    width: 35%;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+#comment{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.news-img{
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+

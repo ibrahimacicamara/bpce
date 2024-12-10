@@ -1,0 +1,25 @@
+<body>
+<h1 style="color: var(--my-second); font-size: 50px; font-weight: 500;">Nos métiers à la une</h1>
+<div #worksView id="works">
+    <div *ngFor="let work of works">
+        <a href="{{work.link}}"><div class="work">
+            <div class="name">{{work.name}}</div>
+            <img style="width: 100%;height: auto;" src="{{work.img}}" alt="{{work.name}}">
+        </div></a>
+    </div>
+</div>
+<div style="position: relative; text-align: end;margin-right: 40px; margin-bottom: 40px;"><div style="padding: 10px;" class="fa fa-arrow-left" (click)="scrollEft()"></div> <div style="padding: 10px;" class="fa fa-arrow-right" (click)="scrollRight()"></div></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+    <div style="width: 50%;"><figure></figure>
+   <div style="display: flex; flex-wrap: wrap;"><img style="height: 70px;width:auto;" src="assets/guillemet.PNG" alt=""> <h1 style="color: var(--my-third);font-size: 40px;font-style: italic; font-weight:normal; width: 70%;">Découvrez un groupe multi-culturel</h1></div>
+    <h2 style="font-weight: 100;text-spacing-trim: 5px; line-height: 1.7; margin-bottom: 50px;margin-top: 50px;">Parce que notre Groupe offre une multitude de possibilités, Il représente un champ des possibles unique pour vous révéler : quels que soient votre activité, votre métier ou votre projet !</h2>
+    <a href="https://recrutement.bpce.fr/nous-rejoindre/le-groupe-bpce-engage-en-faveur-de-la-diversite-et-de-linclusion/"><button>Nos éléments de preuve</button></a>
+</div>
+<div id="word" >
+    <h3 style="line-height: 1.7;text-spacing-trim: 3px; font-weight: 500; font-style: italic;">L'Inspection me donne l'opportunité d'effectuer des missions à Paris, en région et aussi à l’international. Je travaille à la fois en autonomie et en équipe, avec des équipes jeunes et différentes à chaque mission.</h3>
+    <h3 style="margin: 0px; margin-top: 30px;">Chloé</h3>
+    <h3 style="line-height: 1.6; font-weight: 500;margin: 0px;">Inspectrice</h3>
+    <a href="https://recrutement.bpce.fr/temoignage/chloe"><div class="hidden"><span class="fa fa-plus" style="font-size: 25px;color: white;font-weight: 100;"></span></div></a>
+</div>
+</div>
+</body>
