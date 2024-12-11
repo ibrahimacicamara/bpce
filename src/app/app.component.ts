@@ -4,11 +4,12 @@ import { AppBarComponent } from "./app-bar/app-bar.component";
 import { FirstSectionComponent } from "./first-section/first-section.component";
 import { SecondSectionComponent } from "./second-section/second-section.component";
 import { StickyBarComponent } from "./sticky-bar/sticky-bar.component";
+import { ScrollingComponent } from "./scrolling/scrolling.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AppBarComponent, FirstSectionComponent, SecondSectionComponent, StickyBarComponent],
+  imports: [RouterOutlet, AppBarComponent, FirstSectionComponent, SecondSectionComponent, StickyBarComponent, ScrollingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
